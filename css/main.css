@@ -1,0 +1,41 @@
+/* here goes the font */
+
+/* regole generiche di pagina */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+/* regole ricorrenti di pagina */
+
+
+/* regole header */
+header .logo-ms a img {
+  max-width: 200px;
+}
+
+header .hamburger-menu-ms {
+  display: none;
+}
+ header nav > ul li {
+   display:inline-block;
+   list-style-type: none !important;
+   text-decoration: none;
+   border: 0 !important;
+ }
+
+@media all and (max-width:768px) {
+ header .hamburger-menu-ms{
+   display: block;
+ }
+
+ header nav ul {
+   display: none;
+ }
+}
