@@ -87,6 +87,19 @@ header .jumbotrone button img {
   width: auto;
 }
 
+header .customer-hub {
+  background-color: #f3f5f9;
+  text-align: center;
+}
+header .customer-hub .img-row {
+display: inline-block;
+}
+
 @media all and (max-width:768px) {
+  header .customer-hub .img-row {
+    display: block;
+    width: 100%;
+  }
+
 
 }
