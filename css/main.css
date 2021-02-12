@@ -149,6 +149,27 @@ main #centered-image-section .centered-image .slide-selector i {
   background-color: #0069ff;
 } */
 
+/* regole quarta section */
+main #table-section {
+  background: lightblue;
+}
+
+main #table-section table tr {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+main #table-section table tr.no-border {
+  border: 0;
+}
+main #table-section table td {
+  width: 25%;
+  padding: 10px 15px;
+}
+main #table-section table td.city {
+  width: 50%;
+  padding: 10px 15px;
+}
 /* media queries */
 @media all and (max-width:768px) {
   header .customer-hub .img-row {
