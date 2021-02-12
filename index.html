@@ -9,74 +9,64 @@
     <link rel="stylesheet" href="css/main.css">
     <title>DigitalOcean</title>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
     <!-- ++HEADER++ -->
     <header>
 
+      <nav>
+                <nav class="navbar navbar-default navbar-fixed-top">
+                      <div class="container">
+                        <!-- bootstra's hamburger menu begin -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="#">
+                              <img id="logo" src="img/logo.png" alt="Brand">
+                          </a>
+                        </div>
+                        <!-- bootstrap's hamburger menu end -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav">
+                              <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="#">Action</a></li>
+                                      <li role="separator" class="divider"></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">Costumers</a></li>
+                              <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="#">Action</a></li>
+                                      <li role="separator" class="divider"></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">Costumers</a></li>
+                          </ul>
 
-        <nav>
-          <div class="container">
-          <div class="row">
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Docs</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Login</a></li>
+                            <li><button type="button" class="btn btn-default navbar-btn">Sign in</button></li>
+                          </ul>
+                        </div>  <!-- everything inside goes in the hamburger menu when in xs-->
+                      </div>  <!-- container's closing tag -->
+                    </nav>
+            </nav>
 
-            <div class="col-xs-6 col-md-4 col-lg-3">
-              <div class="logo-ms">
-              <a href="#"><img src="img/logo.png" alt=""></a>
-              </div>
-            </div>
-
-            <div class="col-xs-offset-5 col-xs-1 col-lg-offset-0 col-lg-4">
-              <!-- hamburger menu -->
-              <div class="hamburger-menu-ms">
-                <i class="fas fa-bars"></i>
-              </div>
-
-              <ul class="nav-first-half">
-                <li>
-                  <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      Products
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a href="#">Customers</a> </li>
-                <li><div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Community
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li>Pricing</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul>
-                <li>Docs</li>
-                <li></li>
-                <li>Login</li>
-                <li> <button type="button" name="button"></button> </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        </nav>
 
         <!-- jumbotron -->
       <div class="jumbotrone">
@@ -84,10 +74,29 @@
 
           <div class="row">
             <div class="col-xs-12 col-md-6">
-
+              <div class="text-cell">
+                <h1>The simplest cloud platform for developers & teams.</h1>
+                <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, wheter you're running one virtual machine or ten thousand</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-md-6">
+            <!-- text-cell end -->
 
+            <div class="col-xs-12 col-md-6">
+              <div class="form-cell">
+                <h2>Deploy your app in seconds.</h2>
+                <h2><a href="#"> Get started now.</a></h2>
+                <form class="" action="index.html" method="post">
+                  <input type="email" name="" value="" placeholder="Email">
+                  <input type="password" name="" value="" placeholder="Password">
+                </form>
+                <button type="button" class="blue white-txt" name="button">Create your account</button>
+                <button type="button" class="" name="button">
+                  <img src="img/google-icon.png" alt="logo google">
+                  <span>Sign up with google</span>
+                </button>
+                <p>By signing up you agree to the <a href="#">Terms of Service</a> </p>
+              </div>
+              <!-- form-cell -->
             </div>
           </div>
         </div>
@@ -97,18 +106,21 @@
         <p></p>
         <div class="container">
           <div class="row">
+            <div class="">
+              <h3>INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h3>
+            </div>
             <!-- riga con immagini -->
             <div class="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <img src="img/docker.svg" alt="">
+              <img src="img/gitlab.svg" alt="">
             </div>
             <div class="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <img src="img/slack.svg" alt="">
+              <img src="img/hashicorp.svg" alt="">
             </div>
             <div class="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <img src="img/hashicorp.svg" alt="">
+              <img src="img/splunklogo.svg" alt="">
             </div>
           </div>
         </div>

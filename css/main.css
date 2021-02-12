@@ -1,5 +1,7 @@
 /* here goes the font */
 
+
+
 /* regole generiche di pagina */
 
 * {
@@ -10,32 +12,81 @@
 
 body {
   font-size: 15px;
+  font-family: 'Inter-Bold','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif';
 }
 
 /* regole ricorrenti di pagina */
 
 
 /* regole header */
-header .logo-ms a img {
+
+header > nav > nav {
+  background-color: #fff !important;
+}
+
+header nav #logo {
   max-width: 200px;
 }
 
-header .hamburger-menu-ms {
-  display: none;
+
+
+header .jumbotrone {
+  margin-top: 52px;
+  background-image: url(../img/jumbo.svg);
 }
- header nav > ul li {
-   display:inline-block;
-   list-style-type: none !important;
-   text-decoration: none;
-   border: 0 !important;
- }
+
+header .jumbotrone .text-cell , header .jumbotrone .form-cell{
+  color: white;
+  padding: 30px 10px;
+}
+
+header .jumbotrone .text-cell h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+header .jumbotrone .text-cell p {
+  font-size: 3rem;
+}
+header .jumbotrone .form-cell {
+  text-align: center;
+  margin: 50px 50px;
+  background-color: #fff;
+  border-radius: 2%;
+  border: 1px solid grey;
+  box-shadow: 1px 1px grey;
+  color: #000;
+}
+header .jumbotrone .form-cell h2 {
+  padding: 0 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+header .jumbotrone input , header .jumbotrone button {
+  width: 100%;
+  padding: 5px 0;
+  margin: 5px 0;
+  border-radius: 10%
+}
+header .jumbotrone button.blue {
+    background-color: #006aff;
+}
+header .jumbotrone button.white-txt {
+  color: white;
+  font-weight: bold;
+}
+
+header .jumbotrone button {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+header .jumbotrone button img {
+  height: 20px;
+  width: auto;
+}
 
 @media all and (max-width:768px) {
- header .hamburger-menu-ms{
-   display: block;
- }
 
- header nav ul {
-   display: none;
- }
 }
