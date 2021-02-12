@@ -16,8 +16,10 @@ body {
 }
 
 /* regole ricorrenti di pagina */
-
-
+.section-title {
+  text-align: center;
+  margin-top: 5px;
+}
 /* regole header */
 
 header > nav > nav {
@@ -95,6 +97,28 @@ header .customer-hub .img-row {
 display: inline-block;
 }
 
+/* regole main */
+/* first section */
+main #first-section aside {
+  margin: 20px 0;
+}
+main #first-section aside ul {
+  list-style-type: none;
+}
+main #first-section aside ul li {
+  padding: 5px;
+  border-left: 1px solid grey;
+}
+
+main #first-section aside ul li {
+  text-decoration: none;
+  color: black;
+}
+
+main #first-section aside ul li:hover {
+  background-color: #ccc;
+}
+/* media queries */
 @media all and (max-width:768px) {
   header .customer-hub .img-row {
     display: block;
