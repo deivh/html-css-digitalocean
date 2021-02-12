@@ -116,8 +116,39 @@ main #first-section aside ul li {
 }
 
 main #first-section aside ul li:hover {
-  background-color: #ccc;
+  background-color: #f3f5f9;
 }
+/* first section end */
+
+/* centered image section (sections 2-5) */
+main #centered-image-section {
+  background-color: #f3f5f9;
+}
+
+main #centered-image-section .centered-image i {
+  padding: 0 20px;
+  font-size: 30px;
+  color: black;
+}
+
+main #centered-image-section .centered-image i.lighter {
+  color: lightgrey;
+}
+
+main #centered-image-section .centered-image i:hover {
+  font-weight: bold;
+}
+main #centered-image-section .centered-image .slide-selector {
+  text-align: center;
+}
+main #centered-image-section .centered-image .slide-selector i {
+  color: #0069ff;
+}
+
+/* main #centered-image-section .centered-image .slide-selector .far.fa-circle:hover {
+  background-color: #0069ff;
+} */
+
 /* media queries */
 @media all and (max-width:768px) {
   header .customer-hub .img-row {
